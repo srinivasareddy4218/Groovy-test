@@ -2,7 +2,7 @@ node{
     
     stage("Main branch"){	
 	      if((env.Branch_Name =~ '.*main.*|.*releasefix.*|.*hotfix.*|.*bugfix.*')) {
-		  echo 'This is main branch'
+		  echo 'This is the main branch'
 		 }
        }
     stage("dev branch"){	

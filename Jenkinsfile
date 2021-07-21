@@ -7,7 +7,7 @@ node{
        }
     stage("dev branch"){	
 	      if((env.Branch_Name =~ '.*dev.*')) {
-		  echo 'This is the dev branch and commits in dev branch'
+		  echo 'This is the dev branch'
 		 }
        }
 }

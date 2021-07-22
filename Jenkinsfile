@@ -3,6 +3,8 @@ node{
     stage("Main branch"){	
 	      if((env.Branch_Name =~ '.*main.*')) {
 		  echo 'This is the main branch'
+		  def now = new Date()
+                 println now.format("yyMMdd.HHmm", TimeZone.getTimeZone('UTC'))    
 		 }
        }
     stage("dev branch"){	

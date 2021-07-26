@@ -11,7 +11,7 @@ node{
 	      if((env.Branch_Name =~ '.*dev.*')) {
 		  echo 'This is the dev branch'
 		  def now = new Date()
-                 println now.format("yyMMdd.HHmm", TimeZone.getTimeZone('IST'))     
+                 println now.format("yyMMdd.HHmm", TimeZone.getTimeZone('CST'))     
 		 }
        }
 }	   
